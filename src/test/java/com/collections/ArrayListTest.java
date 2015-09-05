@@ -15,4 +15,13 @@ public class ArrayListTest {
 
         assertEquals("The list.size() method call did not return the expected result.", expectedSize, list.size());
     }
+
+    @Test
+    public void testSizeReturnsOne() {
+        int expectedSize = 1;
+        List list = new ArrayList();
+        list.add("test");
+        
+        assertEquals("The list.size() method should return an int of 1.", expectedSize, list.size());
+    }
 }
